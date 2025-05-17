@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nuestros Caballos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fefefe;
+      color: #333;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #5C67F2;
+      padding: 20px 20px 10px;
+      z-index: 1000;
+      color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .header-spacer {
+      height: 110px; /* Altura del header para que no tape el contenido */
+    }
+
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 24px;
+    }
+
+    .scroll-menu {
+      display: flex;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .scroll-menu a {
+      flex: 0 0 auto;
+      margin-right: 10px;
+      background: white;
+      color: #5C67F2;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background 0.3s;
+      white-space: nowrap;
+    }
+
+    .scroll-menu a:hover {
+      background: #ffd166;
+      color: #222;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      scroll-margin-top: 120px;
+    }
+
+    .intro {
+      background: #f0f4ff;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .intro h2 {
+      font-size: 28px;
+      color: #5C67F2;
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .horse-section {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .horse-section img {
+      width: 250px;
+      height: 250px;
+      border-radius: 15px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .horse-info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .horse-info h2 {
+      color: #5C67F2;
+      margin-top: 0;
+    }
+
+    .quote {
+      font-style: italic;
+      margin-top: 10px;
+      color: #777;
+    }
+
+    .btn-outline {
+      margin-top: 15px;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #5C67F2;
+      background: transparent;
+      color: #5C67F2;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn-outline:hover {
+      background: #5C67F2;
+      color: white;
+    }
+
+    footer {
+      background: #5C67F2;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .horse-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .horse-section img {
+        margin: 0 0 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nuestros Caballos</h1>
+  <div class="scroll-menu">
+    <a href="#estrella">Estrella</a>
+    <a href="#rayo">Rayo</a>
+    <a href="#luna">Luna</a>
+    <a href="#trueno">Trueno</a>
+    <a href="#canela">Canela</a>
+    <a href="#sol">Sol</a>
+  </div>
+</header>
+
+<div class="header-spacer"></div>
+
+<section class="intro">
+  <h2>Bienvenidos a la sección de Equitación</h2>
+  <p>En el <strong>Colegio Los Caminos</strong>, creemos en el poder transformador de la relación entre niños, niñas y los caballos. Esta página está dedicada a nuestros nobles compañeros: conoce a cada uno de ellos, su personalidad y lo que los hace especiales.</p>
+  <a href="#estrella" class="btn-outline">Conocer a los caballos</a>
+</section>
+
+<section id="estrella" class="horse-section">
+  <img src="assets/img/IMG_3277.JPG" alt="Estrella" />
+  <div class="horse-info">
+    <h2>Estrella</h2>
+    <p><strong>Edad:</strong> 5 años</p>
+    <p><strong>Raza:</strong> Árabe</p>
+    <p><strong>Color:</strong> Blanco</p>
+    <p>Estrella es una yegua tranquila, ideal para niños y niñas que están aprendiendo. Siempre está dispuesta a recibir cariño.</p>
+    <p class="quote">"La más dulce de todas, brilla como su nombre."</p>
+    <a class="btn-outline">Ver más información</a>
+  </div>
+</section>
+
+<section id="rayo" class="horse-section">
+  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVpHoNY7fNuiiCf-fqZ0_6tz42XzNiqdK-R-XI-r_K-mAO3TnbuCKANshFwAZSGRpZMfVji1l7i3qFwYhjIznGzQ" alt="Rayo" />
+  <div class="horse-info">
+    <h2>Rayo</h2>
+    <p><strong>Edad:</strong> 7 años</p>
+    <p><strong>Raza:</strong> Criollo</p>
+    <p><strong>Color:</strong> Marrón oscuro</p>
+    <p>Rayo es rápido y juguetón. Le encanta correr por el campo y hacer carreras con sus compañeros.</p>
+    <p class="quote">"La velocidad es su segundo nombre."</p>
+    <a class="btn-outline">Ver más información</a>
+  </div>
+</section>
+
+<section id="luna" class="horse-section">
+  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVpHoNY7fNuiiCf-fqZ0_6tz42XzNiqdK-R-XI-r_K-mAO3TnbuCKANshFwAZSGRpZMfVji1l7i3qFwYhjIznGzQ" alt="Luna" />
+  <div class="horse-info">
+    <h2>Luna</h2>
+    <p><strong>Edad:</strong> 6 años</p>
+    <p><strong>Raza:</strong> Mustang</p>
+    <p><strong>Color:</strong> Gris plateado</p>
+    <p>Luna es curiosa y muy observadora. Disfruta de los paseos tranquilos y la compañía de los niños.</p>
+    <p class="quote">"Serena como la noche iluminada."</p>
+    <a class="btn-outline">Ver más información</a>
+  </div>
+</section>
+
+<section id="trueno" class="horse-section">
+  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVpHoNY7fNuiiCf-fqZ0_6tz42XzNiqdK-R-XI-r_K-mAO3TnbuCKANshFwAZSGRpZMfVji1l7i3qFwYhjIznGzQ" alt="Trueno" />
+  <div class="horse-info">
+    <h2>Trueno</h2>
+    <p><strong>Edad:</strong> 8 años</p>
+    <p><strong>Raza:</strong> Andaluz</p>
+    <p><strong>Color:</strong> Negro brillante</p>
+    <p>Trueno impone respeto con su presencia. Tiene una gran fuerza pero también mucho corazón.</p>
+    <p class="quote">"Fuerte como un relámpago, noble como un sabio."</p>
+    <a class="btn-outline">Ver más información</a>
+  </div>
+</section>
+
+<section id="canela" class="horse-section">
+  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVpHoNY7fNuiiCf-fqZ0_6tz42XzNiqdK-R-XI-r_K-mAO3TnbuCKANshFwAZSGRpZMfVji1l7i3qFwYhjIznGzQ" alt="Canela" />
+  <div class="horse-info">
+    <h2>Canela</h2>
+    <p><strong>Edad:</strong> 4 años</p>
+    <p><strong>Raza:</strong> Pura Sangre</p>
+    <p><strong>Color:</strong> Castaño claro</p>
+    <p>Canela es elegante y amigable. Su pelaje brilla al sol y su andar es suave como el viento.</p>
+    <p class="quote">"Belleza y ternura en un solo trote."</p>
+    <a class="btn-outline">Ver más información</a>
+  </div>
+</section>
+
+<section id="sol" class="horse-section">
+  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVpHoNY7fNuiiCf-fqZ0_6tz42XzNiqdK-R-XI-r_K-mAO3TnbuCKANshFwAZSGRpZMfVji1l7i3qFwYhjIznGzQ" alt="Sol" />
+  <div class="horse-info">
+    <h2>Sol</h2>
+    <p><strong>Edad:</strong> 6 años</p>
+    <p><strong>Raza:</strong> Cuarto de Milla</p>
+    <p><strong>Color:</strong> Dorado</p>
+    <p>Sol es alegre y siempre está trotando. Su energía contagia a todos y adora que le den manzanas.</p>
+    <p class="quote">"Una luz que corre entre los prados."</p>
+    <a class="btn-outline">Ver más información</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Colegio Los Caminos - Sección de Equitación</p>
+</footer>
+
+</body>
+</html>
